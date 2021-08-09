@@ -4,5 +4,7 @@ describe "Confere página e titulo" do
         visit "https://www.youse.com.br/seguro-auto/por-km"
         expect(page.title).to eql "Seguro Auto Por KM | Cote Online Agora"
     end
+
+    
 end
 

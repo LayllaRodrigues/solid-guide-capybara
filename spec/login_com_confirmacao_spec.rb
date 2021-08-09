@@ -29,11 +29,4 @@ describe 'login com confirmação' do
         expect(page).to have_content "Email ou senha inválidos."
 
     end
-  
-  
-    it 'usuário não cadastrado' do
-  
-    end
-
-
 end
