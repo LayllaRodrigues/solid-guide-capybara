@@ -5,3 +5,4 @@ describe "Confere página e titulo" do
         expect(page.title).to eql "Seguro Auto Por KM | Cote Online Agora"
     end
 end
+
