@@ -10,4 +10,19 @@ describe 'login simples' do
         expect(find('#flash').visible?).to be true
     
     end
+
+    it 'senha incorreta' do
+
+        visit 'https://training-wheels-protocol.herokuapp.com/login'
+        
+        fill_in 'username' , with: 'stark'
+        fill_in  'password' , with: 'jarvi'
+
+        click_button 'Login'
+
+        expect(find('#flash').visible?).to be true
+
+    end
+  
+
 end
