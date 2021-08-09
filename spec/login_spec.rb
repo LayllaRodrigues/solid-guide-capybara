@@ -1,6 +1,11 @@
 describe 'login simples' do
-    it 'login com sucesso' do
+
+    before(:each) do
         visit 'https://training-wheels-protocol.herokuapp.com/login'
+    end
+
+    
+    it 'login com sucesso' do
         
         fill_in 'username' , with: 'stark'
         fill_in  'password' , with: 'jarvis'
@@ -13,7 +18,6 @@ describe 'login simples' do
 
     it 'senha incorreta' do
 
-        visit 'https://training-wheels-protocol.herokuapp.com/login'
         
         fill_in 'username' , with: 'stark'
         fill_in  'password' , with: 'jarvi'

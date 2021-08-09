@@ -1,8 +1,11 @@
 describe 'login com confirmação' do
+
+    before(:each) do
+        visit 'https://www.youse.com.br/users/email_verifications/new'
+    end
     
     it 'login com sucesso' do
 
-        visit 'https://www.youse.com.br/users/email_verifications/new'
 
         fill_in 'email' , with: 'laylla.rodrigues@youse.com.br'
         click_button 'commit'
@@ -16,7 +19,6 @@ describe 'login com confirmação' do
     end
 
     it 'senha incorreta' do
-        visit 'https://www.youse.com.br/users/email_verifications/new'
 
 
         fill_in 'email' , with: 'laylla.rodrigues@youse.com.br'
